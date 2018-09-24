@@ -10,8 +10,8 @@ const Discord = require('discord.js');
 
 //constants
 const VERSION = '0.1.1';
-const TOKEN = 'TOKEN GOES HERE';
-const CHANNEL = 'log';
+const TOKEN = 'NDkzMDM0ODMyMDQxODY5MzEz.DopmWA.mpOEBqUcyECcWSLUKgvbp2h8fc8';
+const CHANNEL = 'logs';
 
 //declarations
 var bot = new Discord.Client();
