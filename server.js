@@ -10,7 +10,6 @@ const Discord = require('discord.js');
 
 //constants
 const VERSION = '0.1.1';
-const TOKEN = process.env.token;
 const CHANNEL = 'logs';
 
 //declarations
@@ -260,7 +259,7 @@ console.log('----------------------------------------------');
 
 console.log('[META][INFO] Started Logger v' + VERSION);
 
-bot.login(TOKEN); //log in to discord
+bot.login(process.env.TOKEN); //log in to discord
 
 function formatConsoleMessage(message) {
     return message.cleanContent.replace(new RegExp('\n', 'g'), '\n\t');
