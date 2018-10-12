@@ -10,7 +10,7 @@ const Discord = require('discord.js');
 
 //constants
 const VERSION = '0.1.1';
-const TOKEN = 'NDkzMDM0ODMyMDQxODY5MzEz.DopmWA.mpOEBqUcyECcWSLUKgvbp2h8fc8';
+const TOKEN = process.env.token;
 const CHANNEL = 'logs';
 
 //declarations
