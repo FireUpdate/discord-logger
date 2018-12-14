@@ -23,8 +23,8 @@ var bot = new Discord.Client();
 bot.on('ready', function() {
     console.log('[META][INFO] Connected to Discord API Service');
 });
-
-bot.user.setActivity('YouTube', { type: 'WATCHING' })
+bot.user.setActivity(`Spying CroBy™` , {type: "PLAYING"});
+});
   .then(presence => console.log(`Activity set to ${presence.game ? presence.game.name : 'none'}`))
   .catch(console.error);
 
