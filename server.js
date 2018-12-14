@@ -22,11 +22,8 @@ var bot = new Discord.Client();
 //bot is ready to start working, print status update to console
 bot.on('ready', function() {
     console.log('[META][INFO] Connected to Discord API Service');
+    bot.user.setActivity(`CroBy™` , {type: "WATCHING"});
 });
-bot.user.setActivity(`Spying CroBy™` , {type: "PLAYING"});
-});
-  .then(presence => console.log(`Activity set to ${presence.game ? presence.game.name : 'none'}`))
-  .catch(console.error);
 
 //bot disconnected from Discord
 bot.on('disconnected', function() {
