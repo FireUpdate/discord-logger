@@ -22,11 +22,10 @@ var bot = new Discord.Client();
 //bot is ready to start working, print status update to console
 bot.on('ready', function() {
     console.log('[META][INFO] Connected to Discord API Service');
-    bot.user.setActivity(`CroBy™` , {type: "WATCHING"});
 });
 
 bot.on('ready', function() {
-    bot.user.setActivity('YouTube', { type: 'WATCHING' })
+    bot.user.setActivity('CroBy™', { type: 'WATCHING' })
   .then(presence => console.log(`Activity set to ${presence.game ? presence.game.name : 'none'}`))
   .catch(console.error);
 });
