@@ -25,6 +25,12 @@ bot.on('ready', function() {
     bot.user.setActivity(`CroBy™` , {type: "WATCHING"});
 });
 
+bot.on('ready', function() {
+    bot.user.setActivity('YouTube', { type: 'WATCHING' })
+  .then(presence => console.log(`Activity set to ${presence.game ? presence.game.name : 'none'}`))
+  .catch(console.error);
+});
+
 //bot disconnected from Discord
 bot.on('disconnected', function() {
     console.log('[META][WARN] Disconnected from Discord API Service. Attempting to reconnected...');
